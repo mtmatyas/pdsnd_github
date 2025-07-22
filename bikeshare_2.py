@@ -97,10 +97,10 @@ def raw_data(df):
     while not exit_loop:
         view_data = input('Would you like to see 5 examples of individual trip data? Please enter yes or no: ').lower()
         if view_data == 'yes':
-            i = 0
+            count = 0
             while True:
-                print(df.iloc[i:i+5])
-                i += 5
+                print(df.iloc[count:count+5])
+                count += 5
                 additional_data = input('Would you like to see an additional 5 examples of individual trip data? Please enter yes or no: ').lower()
                 if additional_data == 'no':
                     exit_loop = True
